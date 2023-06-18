@@ -1,0 +1,260 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+:root {
+	--dark-cyan: hsl(158, 36%, 37%);
+	--cream: hsl(30, 38%, 92%);
+	--ms-overflow-style: hsl(212, 21%, 14%);
+	--dark-grayish-blue: hsl(228, 12%, 48%);
+	--white: hsl(0, 0%, 100%);
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+
+	background-color: var(--cream);
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.product-box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 270px;
+	height: 490px;
+	background-color: var(--white);
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.product-img {
+	position: relative;
+	width: 270px;
+	height: 180px;
+	background-image: url('../images/image-product-mobile.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.product-text {
+	padding: 20px;
+}
+
+.top-text .preview {
+	font-size: 13px;
+	letter-spacing: 3px;
+	padding-bottom: 10px;
+	color: var(--dark-grayish-blue);
+}
+
+.top-text .heading {
+	padding-bottom: 14px;
+	font-family: 'Fraunces', serif;
+	font-weight: bold;
+	font-size: 23px;
+}
+
+.bottom-text .about-product-text {
+	padding-bottom: 10px;
+	line-height: 1.5;
+	font-size: 13px;
+	color: var(--dark-grayish-blue);
+}
+
+.price {
+	padding-bottom: 35px;
+}
+
+.bottom-text .new-price {
+	font-family: 'Fraunces', serif;
+	font-weight: bold;
+	font-size: 28px;
+	color: var(--dark-cyan);
+}
+
+.bottom-text .old-price {
+	padding-left: 10px;
+	color: var(--dark-grayish-blue);
+	text-decoration: line-through;
+}
+
+.btn-buy-product {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 230px;
+	height: 45px;
+	font-size: 15px;
+	font-weight: bold;
+	border: none;
+	border-radius: 8px;
+	background-color: var(--dark-cyan);
+	color: var(--white);
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-buy-product:hover {
+	background-color: hsl(158, 35%, 20%);
+	color: var(--cream);
+}
+
+.btn-buy-product i {
+	padding-right: 8px;
+}
+
+.attribution {
+	font-size: 9px;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 375px) {
+	.product-box {
+		width: 320px;
+		height: 595px;
+		border-radius: 12px;
+	}
+
+	.product-img {
+		width: 320px;
+		height: 220px;
+	}
+
+	.product-text {
+		padding: 25px;
+	}
+
+	.top-text .preview {
+		font-size: 15px;
+		letter-spacing: 3px;
+		padding-bottom: 10px;
+	}
+
+	.top-text .heading {
+		padding-bottom: 15px;
+		font-size: 27px;
+	}
+
+	.bottom-text .about-product-text {
+		padding-bottom: 15px;
+		font-size: 14px;
+	}
+
+	.price {
+		padding-bottom: 40px;
+	}
+
+	.bottom-text .new-price {
+		font-size: 30px;
+	}
+
+	.bottom-text .old-price {
+		padding-left: 10px;
+	}
+
+	.btn-buy-product {
+		width: 280px;
+		height: 50px;
+		border-radius: 10px;
+	}
+
+	.btn-buy-product i {
+		padding-right: 8px;
+	}
+}
+
+@media (min-width: 1440px) {
+	.product-box {
+		width: 650px;
+		height: 530px;
+		border-radius: 15px;
+	}
+
+	.product-img {
+		width: 325px;
+		height: 530px;
+		background-image: url('../images/image-product-desktop.jpg');
+	}
+
+	.product-text {
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 325px;
+		height: 530px;
+		padding: 10px 30px;
+	}
+
+	.top-text .preview {
+		font-size: 15px;
+		letter-spacing: 5px;
+		padding: 20px 0px;
+		color: var(--dark-grayish-blue);
+	}
+
+	.top-text .heading {
+		padding-bottom: 25px;
+		padding-right: 5px;
+		font-family: 'Fraunces', serif;
+		font-weight: bold;
+		font-size: 38px;
+		line-height: 1;
+	}
+
+	.bottom-text .about-product-text {
+		padding-bottom: 35px;
+		line-height: 1.7;
+		font-size: 16px;
+		color: var(--dark-grayish-blue);
+	}
+
+	.price {
+		padding-bottom: 50px;
+	}
+
+	.bottom-text .new-price {
+		font-family: 'Fraunces', serif;
+		font-weight: bold;
+		font-size: 38px;
+		color: var(--dark-cyan);
+	}
+
+	.bottom-text .old-price {
+		padding-left: 15px;
+		color: var(--dark-grayish-blue);
+		text-decoration: line-through;
+	}
+
+	.btn-buy-product {
+		position: relative;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 270px;
+		height: 60px;
+		padding: 10px 30px;
+		font-size: 18px;
+		font-weight: bold;
+		border: none;
+		border-radius: 8px;
+		background-color: var(--dark-cyan);
+		color: var(--white);
+	}
+
+	.btn-buy-product i {
+		padding-right: 8px;
+	}
+}
